@@ -1,0 +1,5 @@
+.idea
+.gradle
+build
+ui/node_modules
+ui/dist
