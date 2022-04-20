@@ -1,11 +1,11 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const webpack = require("webpack");
+const Dotenv = require('dotenv-webpack')
 const path = require("path");
-
+const webpack = require("webpack");
 const basePath = __dirname;
 
-module.exports = {
+module.exports = (env) => {
+    return {
     context: path.join(basePath, "src"),
     resolve: {
         extensions: [".js", ".ts", ".tsx"],
@@ -57,9 +57,9 @@ module.exports = {
             template: "index.html", //Name of template in ./src
             hash: true,
         }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css",
-        }),
+        new Dotenv(),
+        new webpack.DefinePlugin({
+            POSITIVE_BOT_TOKEN: JSON.stringify(process.env.POSITIVE_BOT_TOKEN)
+        })
     ],
-};
+}};
