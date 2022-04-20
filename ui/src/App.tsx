@@ -16,9 +16,9 @@ export const App = () => {
     const queryId = initDataUnsafe?.query_id || 'AAHs6FUEAAAAAOzoVQRPYshX';
     const handleClick = useCallback((selected: string) => sendMessage(queryId, selected, initDataUnsafe.user), [queryId]);
     return (<div className="layout">
-        <h3 className="header">Куда пойти?</h3>
-        <Plate text="В баню" onClick={handleClick}/>
-        <Plate text="В клубняк" onClick={handleClick}/>
-        <Plate text="В бар" onClick={handleClick}/>
+        <h3 className="header">Where to go this evening?</h3>
+        <Plate text="To a night club" onClick={handleClick}/>
+        <Plate text="For a walk" onClick={handleClick}/>
+        <Plate text="To a spa" onClick={handleClick}/>
     </div>);
 };
