@@ -19,5 +19,9 @@ To run the bot:
        
    After build is done you'll see web static files required for Bot web app at /dist folder. 
 4. Host generated static somewhere available by HTTPS protocol, for example https://nyavro.github.io/index.html
+5. Go to @BotFather and run command /setmenubutton with an URL configured at previous step.
+6. Run main Main.kt. This will start echo bot.
+7. Open your bot in Telegram and click at Bot's 'menu' button configured at step 5.
+8. See the web app, click buttons and get a response from web app to the bot
 
        
