@@ -22,6 +22,7 @@ To run the bot:
 5. Go to @BotFather and run command /setmenubutton with an URL configured at previous step.
 6. Run main Main.kt. This will start echo bot.
 7. Open your bot in Telegram and click at Bot's 'menu' button configured at step 5.
-8. See the web app, click buttons and get a response from web app to the bot
-
+8. See the web app, click buttons and get a response from web app to the bot: 
+ 
        
+![photo_2022-04-21_22-00-06](https://user-images.githubusercontent.com/3238013/164487432-8f43bb28-459c-4af9-a554-a3e7e7719d75.jpg)
